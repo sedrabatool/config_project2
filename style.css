@@ -1,0 +1,161 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #15101C;
+    scrollbar-width: thin;
+    scrollbar-color: #1d1825bd #2a2433;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1d1825bd;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2a2433;
+    border-radius: 10px;
+}
+#container{
+    margin: auto; /*centers horizentally*/
+    position: relative;  /*otherwise top property can not be applied*/
+    width: 370px;
+    height: 480px;
+    top: 60px;
+    border-radius: 7px 7px 7px 7px;
+    background-color: #1d1825bd;
+    border: 2px solid #1D1825 ;
+    padding: 20px;
+    overflow-y: auto;
+    
+}
+#entertext{
+    display: flex;
+    background-color: #1d1825bd;
+    border-radius: 5px;                                                                                                                     
+    height: 30px;
+    width: 90%;
+    
+}
+input{
+    flex: 1; /* ? */
+    border: none;
+    outline: none;
+    color: #777777;
+    padding: 10px;
+    background-color: #1d1825bd;
+    fill: none;
+    border:1px solid #9E78CF ;
+    border-radius: 5px;    
+}
+input:focus{
+    border:  1px solid #9E78CF;
+}
+#entertextcontainer{
+    display: flex;
+    gap: 8px;
+    background: transparent;
+    width: 300px;
+}
+#addbutton{
+    border:1px solid #9E78CF ;
+    border-radius: 5px;
+    width: 10%;
+    background-color: #9E78CF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+#addbutton:hover{
+    cursor: pointer;
+}
+#Addbutton{
+   flex: 1;
+   border: none;
+   outline: none;
+   background-color: transparent;
+   padding: 5px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#Addbutton img{
+    background-color: transparent;
+    color: white;
+    height: 20px;
+   
+
+}
+#Addbutton:hover{
+    cursor: pointer;
+}
+
+p{
+    color: white;
+    outline: none;
+    border: none;
+    background-color: #1d1825bd;
+    background: transparent; /* to remove the original background of p tag*/
+    font-size: 12px; /* to make text small */ 
+}
+
+.tasklist{
+    display: flex;
+    gap: 12px;
+    align-items: center;      /* Center vertically */
+    border-radius: 7px;
+    height: 55px;
+    background-color: #15101C;
+    border:1px solid #15101C;
+    padding-left: 15px;
+    width: 300px;
+
+}
+.iconlist{
+    display: flex;
+    gap: 11px;
+    width: 30%;
+}
+.iconlist:hover{
+     cursor: pointer;
+}
+#tasknumber{
+    margin-bottom: 10px;
+    size: 5px;
+}
+#donetask{
+ margin-top: 40px;
+ size: 10px;
+}
+.donelist{
+    align-items: center;      /* Center vertically */
+    border-radius: 7px;
+    height: 55px;
+    background-color: #15101C;
+    border:1px solid #15101C;
+    padding-left: 15px;
+    display: flex; /* without dispaky flex align-items cant be applied*/
+    width: 300px;
+}
+#alltasks{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: transparent;
+}
+.todolist{
+    width: 70%;
+    color: #9E78CF;
+}
+#alldone{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    background: transparent;
+}
